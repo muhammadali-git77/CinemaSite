@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply px-5 mx-auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.repeate-Effect {
+  background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.607));
+  /* background-color: rgba(0, 0, 0, 0.507); */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !hidden;
+}
+.swiper-pagination-bullet {
+  @apply !bg-green-600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-itemss,
+.card-itemss > img,
+.info-box {
+  transition: 0.35s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-itemss:hover img {
+  scale: 1.1;
+}
+.card-itemss .info-box {
+  opacity: 0;
+}
+.card-itemss:hover .info-box {
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+  @apply bg-gray-950 transition-all duration-500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header{
+  top: -2px;
 }
