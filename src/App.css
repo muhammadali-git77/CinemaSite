@@ -7,8 +7,7 @@
 }
 
 .repeate-Effect {
-  background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.607));
-  /* background-color: rgba(0, 0, 0, 0.507); */
+  background: linear-gradient(0deg, #000000e9, rgba(0, 0, 0, 0.228));
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -38,6 +37,83 @@
   @apply bg-gray-950 transition-all duration-500;
 }
 
-header{
+header {
   top: -2px;
 }
+
+@media (min-width: 1082px) {
+  .Itc_logo_hover {
+    opacity: 0;
+    margin-left: -40px;
+    transition: 1.2s;
+  }
+  .Itc_logo_hover_div:hover .Itc_logo_hover {
+    opacity: 1;
+    margin-left: 5px;
+  }
+}
+.itccccc {
+  background-color: rgb(102, 228, 18);
+  border: 2px solid liner-gradient(transparent 50%, rgb(102, 228, 18));
+}
+
+.IconsCourse {
+  background-color: rgb(102, 228, 18);
+}
+.BgGreen {
+  background-color: rgb(102, 228, 18);
+}
+.ColorGreen {
+  color: rgb(102, 228, 18) !important;
+}
+.shadowed-text {
+  text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+}
+.shadowed-textWhite {
+  text-shadow: 2px 3px 7px rgb(255, 255, 255);
+}
+.shadowed-textWhite1 {
+  text-shadow: 4px 5px 20px rgb(102, 228, 18);
+}
+.SectionTwBg {
+  background-color: rgba(0, 0, 0, 0.838);
+}
+
+/* }
+.Itc_logo_hover_div:hover .Itc_logo_active{
+  opacity: 1;
+  z-index: 50;
+  
+  
+} */
+
+body,
+#root {
+  overflow-x: hidden;
+}
+
+.ImageScale {
+  overflow: hidden;
+}
+
+.ImageScale > img {
+  transition: 1s;
+}
+
+.ImageScale:hover > img {
+  scale: 1.1;
+  
+}
+
+.nav-link {
+    color: black; /* Umumiy rang */
+    text-decoration: none; /* Ayniqsa yo'l shu rangda chiqsin */
+    /* Boshqa stil qo'shimchalari */
+}
+
+.nav-link.active {
+    color: rgb(102, 228, 18) ; /* Yashil rang */
+    /* Boshqa stil qo'shimchalari */
+}
+
+

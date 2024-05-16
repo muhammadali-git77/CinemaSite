@@ -1,13 +1,29 @@
+import { Link } from "react-router-dom";
+import ITC_logo from "../assets/ITC_logo1.png";
+import ITC_logoHover from "../assets/itclogo112.png";
+
 export default function Footer(params) {
   return (
     <footer className="!text-gray-100 body-font">
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-100">
-            <span className="ml-3 text-xl">
-              <h1 className="text-green-600 font-[700] text-[30px] ">FreeTv</h1>
-            </span>
-          </a>
+          <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-100">
+            <Link
+              to={"/"}
+              className="items-center lg:ml-5 ml-[-45px] flex Itc_logo_hover_div "
+            >
+              <img
+                src={ITC_logo}
+                alt=""
+                className="w-[60px] z-20"
+              />
+              <img
+                src={ITC_logoHover}
+                alt=""
+                className=" m-0 w-auto h-[17px] sm:h-[25px] "
+              />
+            </Link>
+          </div>
           <p className="mt-2 text-sm text-gray-500">
             Air plant banjo lyft occupy retro adaptogen indego
           </p>
@@ -126,14 +142,14 @@ export default function Footer(params) {
       <div className="bg-gray-950">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-gray-500 text-sm text-center sm:text-left">
-            © 2024 Free Tv —
+            © 2020 IT center —
             <a
               href="https://twitter.com/knyttneve"
               rel="noopener noreferrer"
               className="text-gray-600 ml-1"
               target="_blank"
             >
-              @knyttneve
+              @itcenter
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

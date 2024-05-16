@@ -8,31 +8,12 @@ export default function BannerSlider(params) {
   const navigate = useNavigate()
   return (
     <div className="">
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 7500,
-          disableOnInteraction: false,
+      <BannerTrailerItem
+        myFunc={() => {
+          navigate("/1");
         }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <BannerTrailerItem myFunc={() => {navigate("/1")}} img={true} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BannerTrailerItem myFunc={() => {navigate("/1")}} img={true} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BannerTrailerItem myFunc={() => {navigate("/1")}} img={true} />
-        </SwiperSlide>
-        
-      </Swiper>
+        img={true}
+      />
     </div>
   );
 }
